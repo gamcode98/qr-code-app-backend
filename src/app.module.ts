@@ -4,6 +4,7 @@ import * as Joi from 'joi';
 
 import { enviroments } from './environments';
 import { DatabaseModule } from './database/database.module';
+import { UsersModule } from './users/users.module';
 import config from './config';
 
 @Module({
@@ -23,6 +24,7 @@ import config from './config';
       }),
     }),
     DatabaseModule,
+    UsersModule,
   ],
   controllers: [],
   providers: [],
